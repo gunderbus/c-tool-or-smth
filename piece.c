@@ -30,6 +30,10 @@ int destroyPeice(piece *WhichPeice){
     return 0;
 }
 
-Vector2D getPos(piece *WhichOne);
+Vector2D getPos(piece *WhichOne){
+    return *WhichOne->pos;
+}
 
-Vector2D *getGivenMotions(piece *WhichOne);
+Vector2D *getGivenMotions(piece *WhichOne){
+    return WhichOne->givenMotions;
+}
