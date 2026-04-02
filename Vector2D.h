@@ -1,5 +1,5 @@
-#ifndef PIECE_H
-#define PIECE_H
+#ifndef VECTOR2D_H
+#define VECTOR2D_H
 
 // Defining the struct with actual integers for clarity and performance
 typedef struct Vector2D {
@@ -7,7 +7,7 @@ typedef struct Vector2D {
     int y;
 } Vector2D;
 
-/* In C, "methods" usually take a pointer to the struct 
+/* In C, "methods" usually take a pointer to the struct
    so they know which object they are modifying.
 */
 
