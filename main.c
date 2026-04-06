@@ -18,6 +18,15 @@ int placePiece(int posx, int posy, char given) {
     return 0;
 }
 
+int removePeice(int posx, int posy){
+    if(board[posx][posy] == '|'){
+        return -1;
+    }
+
+    board[posx][posy] = '|';
+    return 0;
+}
+
 void printBoard() {
     for(int i = 0; i < 8; i++) {
         // FIX 2: It's %s (percent), not /s (forward slash)
